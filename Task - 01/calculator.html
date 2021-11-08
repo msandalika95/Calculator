@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 class="text-center">Calculator</h1>
+    <div class="container">
+        <div>
+            <input id="calculate" type="text" class="text-field">
+        </div>
+
+        <div class="split">
+            <div class="left">
+                <button id="one" class="btn btn-primary" onclick="btnClick('1')">1</button>
+                <button id="two" class="btn btn-primary" onclick="btnClick('2')">2</button>
+                <button id="three" class="btn btn-primary" onclick="btnClick('3')">3</button><br />
+                <button id="four" class="btn btn-primary" onclick="btnClick('4')">4</button>
+                <button id="five" class="btn btn-primary" onclick="btnClick('5')">5</button>
+                <button id="six" class="btn btn-primary" onclick="btnClick('6')">6</button><br />
+                <button id="seven" class="btn btn-primary" onclick="btnClick('7')">7</button>
+                <button id="eight" class="btn btn-primary" onclick="btnClick('8')">8</button>
+                <button id="nine" class="btn btn-primary" onclick="btnClick('9')">9</button><br />
+                <button id="zero" class="btn btn-primary" onclick="btnClick('0')">0</button>
+                <button id="dot" class="btn btn-primary" onclick="btnClick('.')">.</button>
+                <button id="answer" class="btn btn-primary" onclick="getAnswer('')">=</button>
+            </div>
+
+            <div class="right">
+                <button id="plus" class="btn btn-success" onclick="btnClick('+')">+</button><br />
+                <button id="minus" class="btn btn-success" onclick="btnClick('-')">-</button><br />
+                <button id="multi" class="btn btn-success" onclick="btnClick('*')">*</button><br />
+                <button id="divide" class="btn btn-success" onclick="btnClick('/')">/</button><br />
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-info" onclick="clearAnswer()">Clear</button>
+        </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
